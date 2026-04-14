@@ -1,9 +1,14 @@
 import { Base } from '@/templates/Base';
+import { PageHero } from '@/templates/PageHero';
 
 import { Section } from '../layout/Section';
 
 const Vloeren = () => (
   <Base>
+    <PageHero
+      title="PVC vloeren voor elk interieur"
+      image="/vloeren-hero.jpg"
+    />
     <Section>
       <h1 className="mb-6 text-4xl font-bold">PVC Vloeren</h1>
 

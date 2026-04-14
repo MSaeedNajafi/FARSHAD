@@ -25,7 +25,11 @@ const Base = ({ children }: IBaseProps) => (
     {children ? (
       <>
         {/* Push content below navbar */}
-        <div className="pt-24">{children}</div>
+        <div
+        //  className="pt-24"
+        >
+          {children}
+        </div>
 
         <Footer />
       </>
@@ -183,7 +187,12 @@ const Base = ({ children }: IBaseProps) => (
           <BeforeAfter />
 
           {/* CTA */}
-          <Banner />
+          <Banner
+            title="Klaar voor nieuwe PVC vloeren?"
+            description=" Vraag vandaag nog een vrijblijvende offerte aan"
+            buttonText="Aanvragen"
+            urlText="#contact"
+          />
 
           {/* FAQ */}
           <FAQ />
