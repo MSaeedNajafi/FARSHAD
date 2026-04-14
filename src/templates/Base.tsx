@@ -3,6 +3,7 @@ import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
+import { Navbar } from './Navbar';
 import { VerticalFeatures } from './VerticalFeatures';
 
 type IBaseProps = {
@@ -16,13 +17,14 @@ const Base = ({ children }: IBaseProps) => (
     {/* IF CUSTOM PAGE → render children */}
     {children ? (
       <>
-        <Hero />
+        <Navbar />
         {children}
         <Footer />
       </>
     ) : (
       /* DEFAULT HOMEPAGE */
       <>
+        <Navbar />
         <Hero />
 
         <VerticalFeatures />
