@@ -27,12 +27,27 @@ const Hero = () => (
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
-            <Link href="#vloeren" className="text-white">
+            <Link href="/" className="text-white">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/vloeren" className="text-white">
               Vloeren
             </Link>
           </li>
           <li>
-            <Link href="#contact" className="text-white">
+            <Link href="/visgraat" className="text-white">
+              Visgraat
+            </Link>
+          </li>
+          <li>
+            <Link href="/over-ons" className="text-white">
+              Over ons
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="text-white">
               Contact
             </Link>
           </li>
