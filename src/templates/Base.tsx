@@ -73,31 +73,65 @@ const Base = ({ children }: IBaseProps) => (
             </h2>
 
             <div className="mx-auto grid max-w-6xl gap-6 px-6 md:grid-cols-3">
-              <div className="overflow-hidden rounded-xl shadow">
+              {/* <div className="overflow-hidden rounded-xl shadow">
                 <img
                   src="/floor1.jpg"
                   alt="PVC visgraat woonkamer"
                   className="h-64 w-full object-cover"
                 />
                 <p className="p-3">Visgraat PVC woonkamer</p>
+              </div> */}
+              <div className="overflow-hidden rounded-2xl shadow-lg transition hover:scale-[1.02]">
+                <img
+                  src="/floor1.jpg"
+                  className="h-72 w-full object-cover"
+                  alt="PVC visgraat woonkamer"
+                />
+                <div className="p-4">
+                  <h3 className="font-semibold">Visgraat PVC woonkamer</h3>
+                  <p className="text-sm text-gray-500">Luxe afwerking</p>
+                </div>
               </div>
 
-              <div className="overflow-hidden rounded-xl shadow">
+              {/* <div className="overflow-hidden rounded-xl shadow">
                 <img
                   src="/floor2.jpg"
                   alt="PVC moderne keuken vloer"
                   className="h-64 w-full object-cover"
                 />
                 <p className="p-3">Modern PVC keuken</p>
+              </div> */}
+              <div className="overflow-hidden rounded-2xl shadow-lg transition hover:scale-[1.02]">
+                <img
+                  src="/floor2.jpg"
+                  className="h-72 w-full object-cover"
+                  alt="PVC moderne keuken vloer"
+                />
+                <div className="p-4">
+                  <h3 className="font-semibold">Visgraat PVC woonkamer</h3>
+                  <p className="text-sm text-gray-500">Luxe afwerking</p>
+                </div>
               </div>
 
-              <div className="overflow-hidden rounded-xl shadow">
+              {/* <div className="overflow-hidden rounded-xl shadow">
                 <img
                   src="/floor3.jpg"
                   alt="PVC slaapkamer vloer"
                   className="h-64 w-full object-cover"
                 />
                 <p className="p-3">Luxe PVC slaapkamer</p>
+              </div> */}
+
+              <div className="overflow-hidden rounded-2xl shadow-lg transition hover:scale-[1.02]">
+                <img
+                  src="/floor3.jpg"
+                  className="h-72 w-full object-cover"
+                  alt="PVC slaapkamer vloer"
+                />
+                <div className="p-4">
+                  <h3 className="font-semibold">Visgraat PVC woonkamer</h3>
+                  <p className="text-sm text-gray-500">Luxe afwerking</p>
+                </div>
               </div>
             </div>
           </section>
@@ -142,27 +176,40 @@ const Base = ({ children }: IBaseProps) => (
           </section>
 
           {/* CONTACT */}
-          <section id="contact" className="bg-gray-50 py-16">
-            <div className="mx-auto max-w-3xl px-6 text-center">
-              <h2 className="mb-4 text-3xl font-bold">Contact opnemen</h2>
+          <section id="contact" className="bg-gray-50 py-20">
+            <div className="mx-auto grid max-w-5xl gap-10 px-6 md:grid-cols-2">
+              {/* IMAGE */}
+              <img
+                src="/contact.jpg"
+                className="h-full rounded-2xl object-cover"
+                alt="contact"
+              />
 
-              <p className="mb-6">
-                Vraag een vrijblijvende offerte aan voor jouw PVC vloer
-              </p>
+              {/* FORM */}
+              <div>
+                <h2 className="mb-4 text-3xl font-bold">Contact opnemen</h2>
 
-              <form className="grid gap-4">
-                <input className="rounded border p-3" placeholder="Naam" />
-                <input className="rounded border p-3" placeholder="Email" />
-                <input className="rounded border p-3" placeholder="Telefoon" />
-                <textarea
-                  className="rounded border p-3"
-                  placeholder="Bericht"
-                />
+                <p className="mb-6 text-gray-600">
+                  Vraag vrijblijvend een offerte aan
+                </p>
 
-                <button className="rounded bg-black p-3 text-white">
-                  Verstuur aanvraag
-                </button>
-              </form>
+                <form className="grid gap-4">
+                  <input className="rounded border p-3" placeholder="Naam" />
+                  <input className="rounded border p-3" placeholder="Email" />
+                  <input
+                    className="rounded border p-3"
+                    placeholder="Telefoon"
+                  />
+                  <textarea
+                    className="rounded border p-3"
+                    placeholder="Bericht"
+                  />
+
+                  <button className="rounded bg-black py-3 text-white">
+                    Verstuur
+                  </button>
+                </form>
+              </div>
             </div>
           </section>
 
