@@ -1,3 +1,5 @@
+import { FAQ } from '@/components/FAQ';
+
 import { BeforeAfter } from '../components/BeforeAfter';
 import { WhatsappButton } from '../components/WhatsappButton';
 import { Meta } from '../layout/Meta';
@@ -39,7 +41,48 @@ const Base = ({ children }: IBaseProps) => (
           <VerticalFeatures />
 
           {/* WHY CHOOSE US */}
-          <section className="py-16">
+          <section className="bg-white py-20">
+            <div className="mx-auto max-w-6xl px-6">
+              <h2 className="mb-12 text-center text-4xl font-bold">
+                Waarom kiezen voor ons?
+              </h2>
+
+              <div className="grid gap-8 md:grid-cols-3">
+                {[
+                  {
+                    title: 'Gratis advies',
+                    desc: 'Persoonlijk advies voor jouw perfecte vloer.',
+                    icon: '💬',
+                  },
+                  {
+                    title: 'Snelle plaatsing',
+                    desc: 'Binnen enkele dagen professioneel gelegd.',
+                    icon: '⚡',
+                  },
+                  {
+                    title: 'Top kwaliteit',
+                    desc: 'Alleen duurzame A-kwaliteit PVC vloeren.',
+                    icon: '🏆',
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="group rounded-2xl bg-gray-50 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                  >
+                    <div className="mb-4 text-4xl">{item.icon}</div>
+
+                    <h3 className="mb-2 text-xl font-semibold group-hover:text-green-600">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-gray-600">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* <section className="py-16">
             <div className="mx-auto max-w-5xl px-6">
               <h2 className="mb-10 text-center text-3xl font-bold">
                 Waarom kiezen voor ons?
@@ -64,7 +107,7 @@ const Base = ({ children }: IBaseProps) => (
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* GALLERY */}
           <section id="vloeren" className="bg-gray-50 py-16">
@@ -143,7 +186,8 @@ const Base = ({ children }: IBaseProps) => (
           <Banner />
 
           {/* FAQ */}
-          <section className="py-16">
+          <FAQ />
+          {/* <section className="py-16">
             <div className="mx-auto max-w-4xl px-6">
               <h2 className="mb-10 text-center text-3xl font-bold">
                 Veelgestelde vragen
@@ -173,7 +217,7 @@ const Base = ({ children }: IBaseProps) => (
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* CONTACT */}
           <section id="contact" className="bg-gray-50 py-20">
