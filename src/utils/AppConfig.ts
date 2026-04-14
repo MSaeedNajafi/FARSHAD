@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
+  site_name: 'Fvloeren',
+  title: 'Vloeren met karakter, kwaliteit die blijft',
   description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
-  locale: 'en',
+  locale: 'nl',
 };

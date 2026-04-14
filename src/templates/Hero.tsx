@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
@@ -8,37 +7,71 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
-    <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
-        </li>
-      </NavbarTwoColumns>
-    </Section>
+  <div className="relative flex min-h-[80vh] flex-col justify-between overflow-hidden">
+    {/* VIDEO BACKGROUND */}
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute inset-0 size-full object-cover"
+    >
+      <source src="/hero.mp4" type="video/mp4" />
+    </video>
 
-    <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
-        title={
-          <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
-          </>
-        }
-        description="The easiest way to build a React landing page in seconds."
-        button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
-          </Link>
-        }
-      />
-    </Section>
-  </Background>
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/60" />
+
+    {/* NAVBAR */}
+    <div className="relative z-10">
+      <Section yPadding="py-6">
+        <NavbarTwoColumns logo={<Logo xl />}>
+          <li>
+            <Link href="#vloeren" className="text-white">
+              Vloeren
+            </Link>
+          </li>
+          <li>
+            <Link href="#contact" className="text-white">
+              Contact
+            </Link>
+          </li>
+        </NavbarTwoColumns>
+      </Section>
+    </div>
+
+    {/* HERO CONTENT */}
+    <div className="relative z-10">
+      <Section yPadding="pt-20 pb-32">
+        <HeroOneButton
+          title={
+            <>
+              <span className="text-white">PVC vloeren specialist</span>
+              <br />
+              <span className="text-primary-300">voor elk interieur</span>
+            </>
+          }
+          description={
+            'Luxe PVC vloeren, professioneel gelegd en snel geïnstalleerd in heel Nederland.'
+          }
+          button={
+            <div className="flex items-center gap-4">
+              <Link href="#contact">
+                <Button xl>Vraag offerte aan</Button>
+              </Link>
+
+              <a
+                href="https://wa.me/31612345678"
+                className="font-semibold text-green-400 hover:text-green-300"
+              >
+                WhatsApp →
+              </a>
+            </div>
+          }
+        />
+      </Section>
+    </div>
+  </div>
 );
 
 export { Hero };
