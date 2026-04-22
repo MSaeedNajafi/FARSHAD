@@ -84,7 +84,7 @@ const Hero = () => (
 
             {/* SECONDARY CTA */}
             <a
-              href="https://wa.me/31612345678"
+              href="https://wa.me/31684106995"
               className="inline-flex items-center justify-center rounded-md px-6 py-3 font-semibold text-green-400 ring-1 ring-green-400/40 transition hover:bg-green-500/10 hover:text-green-300"
             >
               WhatsApp →

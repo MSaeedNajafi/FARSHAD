@@ -10,14 +10,14 @@ const BeforeAfter = () => {
       <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
         {/* AFTER */}
         <img
-          src="/floor1.jpg"
+          src="/after-stairs.jpeg"
           className="absolute inset-0 size-full object-cover"
           alt="after"
         />
 
         {/* BEFORE */}
         <img
-          src="/floor2.jpg"
+          src="/before-stairs.jpeg"
           className="absolute inset-0 h-full object-cover"
           style={{ width: `${position}%` }}
           alt="before"

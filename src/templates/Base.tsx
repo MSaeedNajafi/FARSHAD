@@ -228,59 +228,6 @@ const Base = ({ children }: IBaseProps) => (
             </div>
           </section> */}
 
-          {/* CONTACT */}
-          <section id="contact" className="bg-gray-50 py-20">
-            <div className="mx-auto grid max-w-5xl gap-10 px-6 md:grid-cols-2">
-              {/* IMAGE */}
-              <img
-                src="/contact.jpg"
-                className="h-full rounded-2xl object-cover"
-                alt="contact"
-              />
-
-              {/* FORM */}
-              <div>
-                <h2 className="mb-4 text-3xl font-bold">Contact opnemen</h2>
-
-                <p className="mb-6 text-gray-600">
-                  Vraag vrijblijvend een offerte aan
-                </p>
-
-                <form className="grid gap-4">
-                  <input className="rounded border p-3" placeholder="Naam" />
-                  <input className="rounded border p-3" placeholder="Email" />
-                  <input
-                    className="rounded border p-3"
-                    placeholder="Telefoon"
-                  />
-                  <textarea
-                    className="rounded border p-3"
-                    placeholder="Bericht"
-                  />
-
-                  <button className="rounded bg-black py-3 text-white">
-                    Verstuur
-                  </button>
-                </form>
-              </div>
-            </div>
-          </section>
-
-          {/* MAP */}
-          <section className="py-16">
-            <h2 className="mb-6 text-center text-3xl font-bold">
-              Onze locatie
-            </h2>
-
-            <div className="mx-auto max-w-5xl px-6">
-              <iframe
-                src="https://www.google.com/maps?q=Rotterdam&output=embed"
-                className="h-[400px] w-full rounded-xl"
-                loading="lazy"
-              />
-            </div>
-          </section>
-
           {/* TESTIMONIALS */}
           <section className="bg-gray-100 py-16">
             <h2 className="mb-10 text-center text-3xl font-bold">
@@ -288,20 +235,55 @@ const Base = ({ children }: IBaseProps) => (
             </h2>
 
             <div className="mx-auto grid max-w-5xl gap-6 px-6 md:grid-cols-3">
-              <div className="rounded-xl bg-white p-6 shadow">
-                <p>Super service en snelle plaatsing!</p>
-                <span className="mt-4 block font-semibold">- Jan</span>
-              </div>
+              <a
+                href="https://www.google.com/maps/contrib/107018422972728908080/reviews/@51.9452563,4.4237335,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en&entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="rounded-xl bg-white p-6 shadow">
+                  <p>⭐️⭐️⭐️⭐️⭐️</p>
+                  <p>
+                    I am really very satisfied with the work of Fvloeren. The
+                    PVC floor was laid super neatly and smoothly, and the end
+                    result simply looks fantastic. They were also reliable and
+                    pleasant to deal with—definitely recommended!
+                  </p>
+                  <small>- hediye rezazade</small>
+                </div>
+              </a>
 
-              <div className="rounded-xl bg-white p-6 shadow">
-                <p>Heel tevreden met onze nieuwe vloer.</p>
-                <span className="mt-4 block font-semibold">- Fatima</span>
-              </div>
+              <a
+                href="https://www.google.com/maps/contrib/109212630132492948276/reviews/@53.174494,6.5961497,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en&entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="cursor-pointer rounded-xl bg-white p-6 shadow transition hover:shadow-lg">
+                  <p>⭐️⭐️⭐️⭐️⭐️</p>
+                  <p>
+                    Great experience from start to finish. Everything was done
+                    step by step and exactly as planned — from underfloor
+                    heating to leveling and installing the PVC herringbone
+                    floor. Very professional team. Highly recommended!
+                  </p>
+                  <small>- Ali Fereshteh pour</small>
+                </div>
+              </a>
 
-              <div className="rounded-xl bg-white p-6 shadow">
-                <p>Top kwaliteit en goede communicatie.</p>
-                <span className="mt-4 block font-semibold">- Mark</span>
-              </div>
+              <a
+                href="https://www.google.com/maps/contrib/100797267705315828964/reviews/@52.1504199,4.6734605,10z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en&entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="rounded-xl bg-white p-6 shadow">
+                  <p>⭐️⭐️⭐️⭐️⭐️</p>
+                  <p>
+                    Very satisfied with the PVC that was installed at my place.
+                    The finish is sleek and professional, and the service was
+                    top-notch. Definitely recommended!
+                  </p>
+                  <small>- pouya mohebi</small>
+                </div>
+              </a>
             </div>
           </section>
         </div>

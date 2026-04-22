@@ -91,25 +91,7 @@ const Visgraat = () => (
         </p>
       </div>
     </Section>
-    {/* 
-    <Section>
-      <div className="rounded-2xl bg-black px-8 py-12 text-center text-white">
-        <h2 className="mb-4 text-3xl font-bold">
-          Interesse in visgraat PVC?
-        </h2>
 
-        <p className="mb-6 text-white/70">
-          Vraag vrijblijvend een offerte aan of plan een adviesgesprek.
-        </p>
-
-        <Link
-          href="/contact"
-          className="inline-block rounded bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700"
-        >
-          Vraag offerte aan
-        </Link>
-      </div>
-    </Section> */}
     <Banner
       title="Interesse in visgraat PVC??"
       description="Vraag vrijblijvend een offerte aan of plan een adviesgesprek."

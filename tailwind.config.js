@@ -37,6 +37,12 @@ module.exports = {
           800: '#2d3748',
           900: '#1a202c',
         },
+        brand: {
+          gold: '#C8A24A',
+          dark: '#A8822F',
+          black: '#1A1410',
+          light: '#E6D3A3',
+        },
       },
       lineHeight: {
         hero: '4.5rem',

@@ -63,11 +63,11 @@ const Contact = () => (
         <div className="space-y-6">
           <div className="rounded-2xl bg-gray-50 p-6 shadow">
             <h3 className="mb-2 text-xl font-semibold">Direct contact</h3>
-            <p className="text-gray-600">📞 +31 6 12345678</p>
+            <p className="text-gray-600">📞 +31684106995</p>
             <p className="text-gray-600">✉️ info@pvcvloeren.nl</p>
 
             <a
-              href="https://wa.me/31612345678"
+              href="https://wa.me/31684106995"
               className="mt-4 inline-block font-semibold text-green-600 hover:text-green-500"
             >
               WhatsApp ons →
@@ -97,7 +97,7 @@ const Contact = () => (
     </Section>
 
     {/* MAP */}
-    <section className="py-16">
+    {/* <section className="py-16">
       <h2 className="mb-6 text-center text-3xl font-bold">Onze locatie</h2>
 
       <div className="mx-auto max-w-5xl px-6">
@@ -107,28 +107,26 @@ const Contact = () => (
           loading="lazy"
         />
       </div>
-    </section>
-
-    {/* CTA BOTTOM */}
-    {/* <section className="bg-black py-16 text-center text-white">
-      <h2 className="text-3xl font-bold">Klaar om te starten?</h2>
-      <p className="mt-3 text-gray-300">
-        Vraag vandaag nog jouw PVC vloer offerte aan
-      </p>
-
-      <a
-        href="https://wa.me/31612345678"
-        className="mt-6 inline-block rounded bg-white px-6 py-3 font-semibold text-black"
-      >
-        WhatsApp direct
-      </a>
     </section> */}
+    <section className="py-16">
+      <h2 className="mb-6 text-center text-3xl font-bold">Onze locatie</h2>
+
+      <div className="mx-auto max-w-5xl px-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.999!2d4.4906602!3d51.9279577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cd35a21c2347%3A0xe949db2c742b4b48!2sFvloeren!5e0!3m2!1snl!2snl!4v1745178000000"
+          className="h-[400px] w-full rounded-2xl shadow"
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+    </section>
 
     <Banner
       title="Klaar om te starten?"
       description=" Vraag vandaag nog jouw PVC vloer offerte aan"
       buttonText=" WhatsApp direct"
-      urlText="https://wa.me/31612345678"
+      urlText="https://wa.me/31684106995"
     />
   </Base>
 );
