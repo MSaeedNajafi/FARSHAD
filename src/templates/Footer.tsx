@@ -10,10 +10,7 @@ const Footer = () => (
           Luxe PVC vloeren gelegd met vakmanschap in heel Nederland.
         </p>
 
-        <p className="mt-4 text-sm text-gray-500">
-          📧 farshaadshafigh@gmail.com
-        </p>
-        <p className="mt-4 text-sm text-gray-500">📧 info@fvloerenshop.nl</p>
+        <p className="mt-4 text-sm text-gray-500">📧 Info@fvloeren.nl</p>
       </div>
 
       {/* LINKS */}

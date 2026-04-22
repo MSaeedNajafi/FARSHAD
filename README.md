@@ -139,3 +139,11 @@ Pro tips: if you need a project wide type checking with TypeScript, you can run 
 ### Contributions
 
 Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
+
+
+### Commands
+
+to fix the lint problem run  npm run lint -- --fix    
+to create a build run    npm run build
+this create a  fodler called /out
+copy this /out to httpdoics in your hosting and reapcle it with what ever is there      

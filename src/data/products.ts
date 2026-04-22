@@ -2,19 +2,14 @@ export type Product = {
   id: string;
   name: string;
   price: number;
-  category: 'plank-pvc';
 
-  subcategory?: 'klik' | 'plak';
+  category: string; // "plank-pvc"
+  subcategory: string; // "klik" | "plak" | "visgraat" | ...
 
   images: string[];
-
   description: string;
   features?: string[];
-
-  specs?: {
-    label: string;
-    value: string;
-  }[];
+  specs?: { label: string; value: string }[];
 };
 
 export const products: Product[] = [
