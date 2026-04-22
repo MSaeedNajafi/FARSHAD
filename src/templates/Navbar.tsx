@@ -45,8 +45,8 @@ const Navbar = () => {
                     href={item.href}
                     className={`transition ${
                       active
-                        ? 'text-primary-400'
-                        : 'text-white hover:text-primary-300'
+                        ? 'text-brand-logoColor'
+                        : 'text-white hover:text-brand-light'
                     }`}
                   >
                     {item.label}
@@ -55,8 +55,8 @@ const Navbar = () => {
                   <span
                     className={`cursor-pointer transition ${
                       active
-                        ? 'text-primary-400'
-                        : 'text-white hover:text-primary-300'
+                        ? 'text-brand-logoColor'
+                        : 'text-white hover:text-brand-light'
                     }`}
                   >
                     {item.label}
@@ -75,7 +75,7 @@ const Navbar = () => {
                             href={child.href}
                             className={`block px-3 py-2 transition ${
                               childActive
-                                ? 'text-primary-400'
+                                ? 'text-brand-logoColor'
                                 : 'text-white hover:bg-white/10'
                             }`}
                           >
@@ -118,7 +118,7 @@ const Navbar = () => {
                         href={item.href}
                         onClick={() => setOpen(false)}
                         className={`transition ${
-                          active ? 'text-primary-400' : 'text-white'
+                          active ? 'text-brand-logoColor' : 'text-white'
                         }`}
                       >
                         {item.label}
@@ -126,7 +126,7 @@ const Navbar = () => {
                     ) : (
                       <span
                         className={`transition ${
-                          active ? 'text-primary-400' : 'text-white'
+                          active ? 'text-brand-logoColor' : 'text-white'
                         }`}
                       >
                         {item.label}
@@ -156,7 +156,7 @@ const Navbar = () => {
                             onClick={() => setOpen(false)}
                             className={`text-sm transition ${
                               childActive
-                                ? 'text-primary-400'
+                                ? 'text-brand-logoColor'
                                 : 'text-gray-300 hover:text-white'
                             }`}
                           >

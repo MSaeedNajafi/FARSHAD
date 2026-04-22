@@ -26,7 +26,7 @@ const Page = () => {
       {/* HERO */}
       <div className="relative h-[40vh] w-full overflow-hidden">
         <img
-          src="/about-hero.jpg"
+          src="/plank-pvc.jpg"
           alt="Plank Klik PVC"
           className="size-full object-cover"
         />

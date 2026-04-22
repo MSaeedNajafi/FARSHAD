@@ -5,7 +5,7 @@ import { Section } from '../layout/Section';
 
 const Hero = () => (
   // <div className="relative flex min-h-[80vh] flex-col justify-between overflow-hidden">
-  <div className="relative flex min-h-[90vh] flex-col justify-center overflow-hidden">
+  <div className="relative flex min-h-[100vh] flex-col justify-center overflow-hidden">
     {/* VIDEO BACKGROUND */}
     <video
       autoPlay

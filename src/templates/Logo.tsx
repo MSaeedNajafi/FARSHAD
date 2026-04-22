@@ -49,9 +49,9 @@ const Logo = (props: ILogoProps) => {
   return (
     <span className="inline-flex items-center">
       <Image
-        src="/logo-white.png"
+        src="/logo2.png"
         alt="Fvloeren logo"
-        width={height * 3}
+        width={height * 2.7}
         height={height}
         className="object-contain"
         priority

@@ -27,7 +27,7 @@ const Base = ({ children }: IBaseProps) => (
         {/* Push content below navbar */}
         <div
           //  className="pt-24"
-          className="pt-20"
+          className="pt-28"
         >
           {children}
         </div>
