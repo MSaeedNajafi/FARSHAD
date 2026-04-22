@@ -42,6 +42,7 @@ module.exports = {
           dark: '#A8822F',
           black: '#1A1410',
           light: '#E6D3A3',
+          logoColor: '#cba135',
         },
       },
       lineHeight: {
