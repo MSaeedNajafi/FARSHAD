@@ -10,7 +10,9 @@ const ITEMS_PER_PAGE = 20;
 const Page = () => {
   const [page, setPage] = useState(1);
 
-  const filtered = products.filter((p) => p.category === 'plank-klik-pvc');
+  const filtered = products.filter(
+    (p) => p.category === 'plank-pvc' && p.subcategory === 'klik',
+  );
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 

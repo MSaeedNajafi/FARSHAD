@@ -2,9 +2,9 @@ export type Product = {
   id: string;
   name: string;
   price: number;
-  category: string;
+  category: 'plank-pvc';
 
-  subcategory?: string;
+  subcategory?: 'klik' | 'plak';
 
   images: string[];
 
@@ -22,8 +22,8 @@ export const products: Product[] = [
     id: 'alpen-klik-pvc-ekofloors',
     name: 'Alpen Klik PVC Ekofloors',
     price: 35.1,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/alpen-klik-.jpg',
       'https://sfvloeren.nl/wp-content/uploads/2025/05/alpen-klik.jpg',
@@ -55,8 +55,8 @@ export const products: Product[] = [
     id: 'amazone-klik-pvc-ekofloors',
     name: 'Amazone Klik PVC Ekofloors',
     price: 35.1,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/amazone-klik.jpg',
       'https://sfvloeren.nl/wp-content/uploads/2025/05/amazone-klik-.jpg',
@@ -87,8 +87,8 @@ export const products: Product[] = [
     id: 'andes-klik-pvc-ekofloors',
     name: 'Andes Klik PVC Ekofloors',
     price: 35.1,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Andes-klik-.jpg',
@@ -123,8 +123,8 @@ export const products: Product[] = [
     id: 'ardenne-klik-pvc-ekofloors',
     name: 'Ardennen Klik PVC Ekofloors',
     price: 35.1,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Ardennen-klik-.jpg',
@@ -159,8 +159,8 @@ export const products: Product[] = [
     id: 'aruba-klik-pvc-ekofloors',
     name: 'Aruba Klik PVC Ekofloors',
     price: 31.4,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Aruba-klik-.jpg',
@@ -195,8 +195,8 @@ export const products: Product[] = [
     id: 'ava-plank-pvc-klik',
     name: 'Ava Plank PVC Klik',
     price: 31.9,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Ava-Plank-PVC-klik.jpg',
@@ -228,9 +228,8 @@ export const products: Product[] = [
     id: 'bali-klik-pvc-ekofloors',
     name: 'Bali Klik PVC Ekofloors',
     price: 31.4,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
-
+    category: 'plank-pvc',
+    subcategory: 'klik',
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Bali-klik-.jpg',
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Bali-klik.jpg',
@@ -264,8 +263,8 @@ export const products: Product[] = [
     id: 'basalt-klik-pvc-stone-ekofloors',
     name: 'Basalt Klik PVC Stone Ekofloors',
     price: 36.95,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Basalt-klik-1.jpg',
@@ -300,8 +299,8 @@ export const products: Product[] = [
     id: 'corfu-klik-pvc-ekofloors',
     name: 'Corfu Klik PVC Ekofloors',
     price: 31.4,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Corfu-klik-.jpg',
@@ -336,8 +335,8 @@ export const products: Product[] = [
     id: 'crystal-plank-pvc-klik',
     name: 'Crystal Plank PVC Klik',
     price: 31.9,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Crystal-Plank-PVC-klik.jpg',
@@ -364,8 +363,8 @@ export const products: Product[] = [
     id: 'cyprus-klik-pvc-ekofloors',
     name: 'Cyprus Klik PVC Ekofloors',
     price: 31.4,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Cyprus-klik-.jpg',
@@ -400,8 +399,8 @@ export const products: Product[] = [
     id: 'dawn-plank-pvc-klik',
     name: 'Dawn Plank PVC Klik',
     price: 31.9,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Dawn-Plank-PVC-klik.jpg',
@@ -451,8 +450,8 @@ export const products: Product[] = [
     id: 'dolomieten-klik-pvc-ekofloors',
     name: 'Dolomieten Klik PVC Ekofloors',
     price: 35.1,
-    category: 'plank-klik-pvc',
-    subcategory: 'plank-klik-pvc',
+    category: 'plank-pvc',
+    subcategory: 'klik',
 
     images: [
       'https://sfvloeren.nl/wp-content/uploads/2025/05/Dolomieten-klik-.jpg',
@@ -481,6 +480,115 @@ export const products: Product[] = [
       { label: 'Gebruikersklasse', value: '33' },
       { label: 'Vloerverwarming', value: 'Ja' },
       { label: 'Warmteweerstand', value: '0,03 m² K/W' },
+    ],
+  },
+  // ==========
+  {
+    id: 'amazone-plak-pvc-ekofloors',
+    name: 'Amazone Plak PVC Ekofloors',
+    price: 29.55,
+    category: 'plank-pvc',
+    subcategory: 'plak',
+
+    images: [
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Amazone-plak.jpg',
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Amazone-plak-.jpg',
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Amazone-plak-1-1.jpg',
+    ],
+
+    description:
+      'De Amazone plak is een PVC-vloer met een natuurlijke eikenhouten uitstraling. Dankzij het verlijmde systeem is deze vloer perfect geschikt voor een strakke en duurzame afwerking in elke ruimte.',
+
+    features: [
+      'Waterbestendig',
+      'Realistisch plankformaat',
+      '100% schoon materiaal',
+      'Geschikt voor vloerverwarming',
+      'Hoge kras- en slijtvastheid',
+    ],
+
+    specs: [
+      { label: 'Kleur', value: 'Amazone plak' },
+      { label: 'Klik/Plak', value: 'Plak' },
+      { label: 'Afmetingen', value: '23,8 x 122,9 cm' },
+      { label: 'Pakinhoud', value: '3,51 m²' },
+      { label: 'Dikte', value: '2,5 mm' },
+      { label: 'Slijtlaag', value: '0,55 mm' },
+      { label: 'Gebruikersklasse', value: '33' },
+      { label: 'Vloerverwarming', value: 'Ja' },
+      { label: 'Warmteweerstand', value: '0,01 m² K/W' },
+    ],
+  },
+  {
+    id: 'andes-plak-pvc-ekofloors',
+    name: 'Andes Plak PVC Ekofloors',
+    price: 29.55,
+    category: 'plank-pvc',
+    subcategory: 'plak',
+
+    images: [
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Andes-plak-.jpg',
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Andes-plak.jpg',
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Andes-plak-1-1.jpg',
+    ],
+
+    description:
+      'De Andes plak uit de EKO Excellent collection combineert tijdloze elegantie met duurzaamheid. Perfect voor woningen en commerciële ruimtes dankzij de sterke slijtlaag en lange levensduur.',
+
+    features: [
+      'Waterbestendig',
+      'Realistisch plankformaat',
+      '100% schoon materiaal',
+      'Geschikt voor vloerverwarming',
+      'Hoge kras- en slijtvastheid',
+    ],
+
+    specs: [
+      { label: 'Kleur', value: 'Andes plak' },
+      { label: 'Klik/Plak', value: 'Plak' },
+      { label: 'Afmetingen', value: '23,8 x 122,9 cm' },
+      { label: 'Pakinhoud', value: '3,51 m²' },
+      { label: 'Dikte', value: '2,5 mm' },
+      { label: 'Slijtlaag', value: '0,55 mm' },
+      { label: 'Gebruikersklasse', value: '33' },
+      { label: 'Vloerverwarming', value: 'Ja' },
+      { label: 'Warmteweerstand', value: '0,01 m² K/W' },
+    ],
+  },
+  {
+    id: 'ardennen-plak-pvc-ekofloors',
+    name: 'Ardennen Plak PVC Ekofloors',
+    price: 29.55,
+    category: 'plank-pvc',
+    subcategory: 'plak',
+
+    images: [
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Ardennen-plak-.jpg',
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Ardennen-plak.jpg',
+      'https://sfvloeren.nl/wp-content/uploads/2025/05/Ardennen-plak-1-1.jpg',
+    ],
+
+    description:
+      'De Ardennen plak heeft een warme eiken uitstraling en past in vrijwel elk interieur. Door de sterke slijtlaag is deze vloer ideaal voor intensief gebruik en projectmatige toepassingen.',
+
+    features: [
+      'Waterbestendig',
+      'Realistisch plankformaat',
+      '100% schoon materiaal',
+      'Geschikt voor vloerverwarming',
+      'Hoge kras- en slijtvastheid',
+    ],
+
+    specs: [
+      { label: 'Kleur', value: 'Ardennen plak' },
+      { label: 'Klik/Plak', value: 'Plak' },
+      { label: 'Afmetingen', value: '23,8 x 122,9 cm' },
+      { label: 'Pakinhoud', value: '3,51 m²' },
+      { label: 'Dikte', value: '2,5 mm' },
+      { label: 'Slijtlaag', value: '0,55 mm' },
+      { label: 'Gebruikersklasse', value: '33' },
+      { label: 'Vloerverwarming', value: 'Ja' },
+      { label: 'Warmteweerstand', value: '0,01 m² K/W' },
     ],
   },
 ];
