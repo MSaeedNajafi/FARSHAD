@@ -7,6 +7,11 @@ import { Logo } from './Logo';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState<string | null>(null);
+
+  const toggle = (label: string) => {
+    setExpanded((prev) => (prev === label ? null : label));
+  };
 
   return (
     <div className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur">
@@ -20,7 +25,6 @@ const Navbar = () => {
         <ul className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
             <li key={item.label} className="group relative">
-              {/* MAIN LINK */}
               {item.href ? (
                 <Link
                   href={item.href}
@@ -34,7 +38,6 @@ const Navbar = () => {
                 </span>
               )}
 
-              {/* DROPDOWN */}
               {item.children && (
                 <ul className="absolute left-0 top-full hidden min-w-[220px] rounded bg-black p-3 shadow-lg group-hover:block">
                   {item.children.map((child) => (
@@ -67,27 +70,43 @@ const Navbar = () => {
       {/* MOBILE MENU */}
       {open && (
         <div className="border-t border-white/10 bg-black px-6 py-4 md:hidden">
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-3">
             {navItems.map((item) => (
               <li key={item.label}>
-                {item.href && (
-                  <Link
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="block text-white"
-                  >
-                    {item.label}
-                  </Link>
-                )}
+                {/* PARENT */}
+                <div className="flex items-center justify-between">
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className="text-white"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <span className="text-white">{item.label}</span>
+                  )}
 
-                {item.children && (
-                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                  {/* TOGGLE CHILDREN */}
+                  {item.children && (
+                    <button
+                      onClick={() => toggle(item.label)}
+                      className="text-white"
+                    >
+                      {expanded === item.label ? '−' : '+'}
+                    </button>
+                  )}
+                </div>
+
+                {/* CHILDREN */}
+                {item.children && expanded === item.label && (
+                  <div className="ml-4 mt-2 flex flex-col gap-2 border-l border-white/10 pl-3">
                     {item.children.map((child) => (
                       <Link
                         key={child.label}
                         href={child.href}
                         onClick={() => setOpen(false)}
-                        className="text-sm text-gray-300"
+                        className="text-sm text-gray-300 hover:text-white"
                       >
                         {child.label}
                       </Link>
@@ -104,192 +123,3 @@ const Navbar = () => {
 };
 
 export { Navbar };
-
-// import Link from 'next/link';
-// import { useRouter } from 'next/router';
-// import { useState } from 'react';
-
-// import { Section } from '../layout/Section';
-// import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-// import { Logo } from './Logo';
-
-// const Navbar = () => {
-//   const [open, setOpen] = useState(false);
-//   const router = useRouter();
-
-//   const isActive = (path: string) => router.pathname === path;
-
-//   const linkClass = (path: string) =>
-//     `transition ${
-//       isActive(path)
-//         ? 'text-primary-300 font-semibold'
-//         : 'text-white hover:text-primary-300'
-//     }`;
-
-//   return (
-//     <div className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/50">
-//       <Section yPadding="py-1">
-//         <NavbarwTwoColumns logo={<Logo xl />}>
-//           {/* DESKTOP */}
-//           <div className="hidden items-center gap-6 md:flex">
-//             <li>
-//               <Link href="/" className={linkClass('/')}>
-//                 Home
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link href="/vloeren" className={linkClass('/vloeren')}>
-//                 Vloeren
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link href="/visgraat" className={linkClass('/visgraat')}>
-//                 Visgraat
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link href="/over-ons" className={linkClass('/over-ons')}>
-//                 Over ons
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link href="/contact" className={linkClass('/contact')}>
-//                 Contact
-//               </Link>
-//             </li>
-//           </div>
-
-//           {/* HAMBURGER */}
-//           <button
-//             onClick={() => setOpen(!open)}
-//             className="flex flex-col gap-1 md:hidden"
-//           >
-//             <span className="h-0.5 w-6 bg-white" />
-//             <span className="h-0.5 w-6 bg-white" />
-//             <span className="h-0.5 w-6 bg-white" />
-//           </button>
-//         </NavbarTwoColumns>
-//       </Section>
-
-//       {/* MOBILE MENU */}
-//       {open && (
-//         <div className="border-t border-white/10 bg-black/70 px-6 py-4 md:hidden">
-//           <ul className="flex flex-col gap-4">
-//             <li>
-//               <Link
-//                 href="/"
-//                 onClick={() => setOpen(false)}
-//                 className={linkClass('/')}
-//               >
-//                 Home
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link
-//                 href="/vloeren"
-//                 onClick={() => setOpen(false)}
-//                 className={linkClass('/vloeren')}
-//               >
-//                 Vloeren
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link
-//                 href="/visgraat"
-//                 onClick={() => setOpen(false)}
-//                 className={linkClass('/visgraat')}
-//               >
-//                 Visgraat
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link
-//                 href="/over-ons"
-//                 onClick={() => setOpen(false)}
-//                 className={linkClass('/over-ons')}
-//               >
-//                 Over ons
-//               </Link>
-//             </li>
-
-//             <li>
-//               <Link
-//                 href="/contact"
-//                 onClick={() => setOpen(false)}
-//                 className={linkClass('/contact')}
-//               >
-//                 Contact
-//               </Link>
-//             </li>
-//           </ul>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export { Navbar };
-// // import Link from 'next/link';
-
-// // import { Section } from '../layout/Section';
-// // import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-// // import { Logo } from './Logo';
-
-// // const Navbar = () => (
-// //   // <div className="fixed top-0 z-50 w-full bg-black/50 backdrop-blur">
-// //   <div className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/50 ">
-// //     <Section yPadding="py-1">
-// //       <NavbarTwoColumns logo={<Logo xl />}>
-// //         <li>
-// //           <Link
-// //             href="/"
-// //             className="text-white transition hover:text-primary-300"
-// //           >
-// //             Home
-// //           </Link>
-// //         </li>
-// //         <li>
-// //           <Link
-// //             href="/vloeren"
-// //             className="text-white transition hover:text-primary-300"
-// //           >
-// //             Vloeren
-// //           </Link>
-// //         </li>
-// //         <li>
-// //           <Link
-// //             href="/visgraat"
-// //             className="text-white transition hover:text-primary-300"
-// //           >
-// //             Visgraat
-// //           </Link>
-// //         </li>
-// //         <li>
-// //           <Link
-// //             href="/over-ons"
-// //             className="text-white transition hover:text-primary-300"
-// //           >
-// //             Over ons
-// //           </Link>
-// //         </li>
-// //         <li>
-// //           <Link
-// //             href="/contact"
-// //             className="text-white transition hover:text-primary-300"
-// //           >
-// //             Contact
-// //           </Link>
-// //         </li>
-// //       </NavbarTwoColumns>
-// //     </Section>
-// //   </div>
-// // );
-
-// // export { Navbar };
