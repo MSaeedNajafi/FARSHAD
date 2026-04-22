@@ -122,7 +122,9 @@ const ProductPage = () => {
 
         {/* DESCRIPTION */}
         <div className="mt-16">
-          <h2 className="mb-4 text-2xl font-bold text-white">Beschrijving</h2>
+          <h2 className="mb-4 text-2xl font-bold text-brand-black">
+            Beschrijving
+          </h2>
 
           <p className="leading-relaxed text-gray-900">{product.description}</p>
 
