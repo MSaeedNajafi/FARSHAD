@@ -1,15 +1,18 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
-import { products } from '@/data/products';
+import { allProducts } from '@/data';
 import { Base } from '@/templates/Base';
 
 const ProductPage = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const product = products.find((p) => p.id === id);
-
+  // const product = products.find((p) => p.id === id);
+  const product = allProducts.find(
+    (p) => p.id === (Array.isArray(id) ? id[0] : id),
+  );
+  //
   const [selectedImage, setSelectedImage] = useState(0);
   const [m2, setM2] = useState(0);
   const [waste, setWaste] = useState(0);
